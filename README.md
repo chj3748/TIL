@@ -18,6 +18,10 @@
 
 
 
+## Flask
+
+- [플라스크 기본 설정](https://github.com/chj3748/TIL/blob/master/flask/flask.md)
+
 ## Python
 
 - 변수
@@ -25,3 +29,4 @@
 
 - 함수
   - 함수 기초
+
