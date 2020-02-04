@@ -18,9 +18,10 @@
   
 
 - 시간 복잡도(Time Complexity) - 빅 오(O) 표기법
+  
   - 가장 큰 영향력을 주는 n에 대한 항만을 표시
 
-![image-20200130094456652](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20200130094456652.png)
+![image-20200130094456652](Theory.assets/image-20200130094456652.png)
 
 - 배열의 필요성??
   - 여러 개의 변수가 필요할 때, 일일이 다른 변수명을 이용하기엔 비효율적일 수 있다.
