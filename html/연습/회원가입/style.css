@@ -1,0 +1,48 @@
+/* 아래애 자유롭게 꾸며 주세요! */
+*:not(h1){
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 1rem;
+    background-color: #ebebeb;
+}
+h1{
+    text-align: center;
+}
+form{
+    width: 500px;
+    margin: 0 auto;
+}
+input{
+    width: 100%;
+    height: 26px;
+}
+ul{
+    list-style: none;
+}
+.submit{
+    color: white;
+    background-color: #c766c7;
+    border: none;
+    height: 30px;
+}
+.submit:hover{
+    cursor: pointer;
+    filter: brightness(80%);
+    transition: filter 1s;
+}
+
+li{
+    margin-bottom: 16px;
+}
+label{
+    font-weight: bold;
+}
+
+p{
+    margin: 5px 0px;
+    color: gray;
+    font-size: 10px;
+}

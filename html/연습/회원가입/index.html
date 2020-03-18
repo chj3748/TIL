@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입 폼</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+</head>
+<body>
+  <h1>회원 가입</h1>
+  <form action="" method="POST">
+    <!-- 아래에 자유롭게 꾸며주세요! 어떠한 제약사항도 없습니다 :) -->
+    <ul class="infolist">
+      <li>
+        <label for="id">사용자 이름 : </label>
+        <input id="id" class="id" type="text" name="id" required>
+        <p>이름을 입력 해주세요.</p>
+      </li>
+      <li>
+        <label for="pw">비밀번호 : </label>
+        <input id="pw" class="pw" type="password" name="pw" required minlength="8">
+        <p>비밀번호는 8자 이상으로 해주세요.</p>
+      </li>
+      <li>
+        <label for="pwc">비밀번호 확인 : </label>
+        <input id="pwc" class="pw" type="password" name="pwc" required>
+        <p>동일하게 입력 해주세요.</p>
+      </li>
+      <li>
+        <input class="submit" type="submit">
+      </li>
+    </ul>
+  </form>
+  <script src="index.js"></script>
+</body>
+</html>
