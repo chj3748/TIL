@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+    {% block content %}
+        <h1>상세보기</h1>
+
+        <table>
+            <tr>
+                <td colspan=2>{{title}}</td>
+            </tr>
+            <tr>
+                <td colspan=2>content : </td>
+            </tr>
+            <tr>
+                <td colspan=2>{{content}}</td>
+            </tr>
+            <tr>
+                <td>작성 : {{created_at}}</td>
+                <td>최종 수정 : {{updated_at}}</td>
+            </tr>
+
+        </table>
+
+
+    {% endblock %}

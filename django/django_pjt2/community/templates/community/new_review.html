@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+    {% block content %}
+        <h1>새 리뷰 작성</h1>
+            <form action='/community/create_review/'>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">title</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" name='title'>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">content</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" name='content'></textarea>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput2">rank</label>
+                <input type="number" class="form-control" id="exampleFormControlInput2" name='rank' placeholder="0~10사이의 평점을 입력해주세요.">
+              </div>
+
+              <button type="submit" class="btn btn-primary">저장하기</button>
+            </form>
+
+    {% endblock %}
