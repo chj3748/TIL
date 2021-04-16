@@ -25,7 +25,6 @@
 ## Python
 
 - 변수
-  - [의존성 주입 DI 기초](https://github.com/cheese10yun/TIL/blob/master/Spring/IoC/DI-기초.md)
 
 - 함수
   - 함수 기초
