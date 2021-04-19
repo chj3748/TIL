@@ -55,7 +55,7 @@ else:
     print(effect(tomato,yt_cnt))
 
 # def possible():
-#     temp=deepcopy(arr)
+#     temp=deepcopy(maps)
 #     tomato=0
 #     area=0
 #     for i in range(n):
@@ -86,17 +86,17 @@ else:
 #     v=False
 #     for i in range(n):
 #         for j in range(m):
-#             if arr[i][j]==day+1:
+#             if maps[i][j]==day+1:
 #                 for d in dm:
 #                     ny, nx = i + d[0], j + d[1]
 #                     if 0 <= ny < n and 0 <= nx < m:
-#                         if arr[ny][nx] == 0:
+#                         if maps[ny][nx] == 0:
 #                             temp.append([ny,nx])
 #                             v=True
 #     return v
 #
 # m, n = map(int,input().split())
-# arr = [ list(map(int,input().split())) for _ in range(n) ]
+# maps = [ list(map(int,input().split())) for _ in range(n) ]
 # day = 0
 # while True:
 #     if day==0:
@@ -109,5 +109,5 @@ else:
 #         break
 #     day+=1
 #     for y,x in temp:
-#         arr[y][x]=day+1
+#         maps[y][x]=day+1
 # print(day)

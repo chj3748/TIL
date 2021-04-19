@@ -4,13 +4,13 @@ input = sys.stdin.readline
 
 # 1
 # N, M = map(int, input().split())
-# arr = [ list(map(int,input().split())) for _ in range(N) ]
+# maps = [ list(map(int,input().split())) for _ in range(N) ]
 
 # for _ in range(M):
 #     x1, y1, x2, y2 = map(int,input().split())
 #     temp_sum = 0
 #     for x in range(x1 - 1, x2):
-#         temp_sum += sum(arr[x][y1 - 1:y2])
+#         temp_sum += sum(maps[x][y1 - 1:y2])
 #     print(temp_sum)
 
 # a1      a1a2    a1a2a3          a1a2a3a4
@@ -18,7 +18,7 @@ input = sys.stdin.readline
 
 N, M = map(int, input().split())
 N += 1 # out of range 방지 0번 index 추가
-# arr 및 dp 배열생성
+# maps 및 dp 배열생성
 arr = [0] * N
 dp = [0] * N
 for i in range(1, N):
