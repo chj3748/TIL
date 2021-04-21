@@ -12,10 +12,16 @@
 - 기본 인자 값(default값 설정)
 
   - 함수 호출시, 만약 인자를 지정하지 않아도 기본값으로 작동되게 함
+
   - ![img](Function-2.assets/61181744-2a1d9400-a665-11e9-9095-6924ca11122e.png)
 
   - 호출시 입력값이 있다면 입력한 인자를 활용하고, 없다면 default설정한 값을 활용함
+
   - **단, 기본 인자 이후에 기본 값이 없는 인자를 사용할 수는 없다**!!!
+
+  - default parameter는 mutable 하다
+
+    [참고자료](https://frhyme.github.io/python-basic/default_parameter_value_in_python/)
 
 - 키워드 인자 (keyword arguments)
   - 함수 호출할때, (변수의 순서를 모를때) 직접 변수의 이름으로 특정 인자를 전달 할 수 있음.
@@ -23,6 +29,7 @@
   - 위 사진의 첫번째 줄을 읽어보면 `print()`함수에서 sep, end 등등의 인자는 키워드 인자로 반드시 제공해야한다는 언급이 있음.
 
 - 가변 인자 리스트
+  
   - 만약 인자의 갯수가 정확하지 않을 시 사용
 
 
