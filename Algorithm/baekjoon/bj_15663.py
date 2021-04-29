@@ -1,4 +1,4 @@
-# 백트래킹 | bj 15663 N과M
+# 백트래킹 | bj 15663 N과M(9)
 import sys
 import itertools
 
