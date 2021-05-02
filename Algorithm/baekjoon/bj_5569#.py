@@ -1,4 +1,4 @@
-# 수학 조합 dp | bj 5569 출근 경로
+# 조합 dp | bj 5569 출근 경로
 import sys
 
 # import itertools
