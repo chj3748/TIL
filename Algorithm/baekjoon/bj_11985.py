@@ -1,5 +1,5 @@
 # dp | bj 11985 오렌지 출하
-# http://boj.kr/35708a61bb1d4149952929e8154ba152
+# http://boj.kr/f293bc24e6e347dba7b5aa08836171fe
 import sys
 # import itertools
 # from math import factorial
