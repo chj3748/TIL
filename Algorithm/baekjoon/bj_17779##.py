@@ -1,4 +1,5 @@
 # dp 수학 | bj 17779 게리맨더링 2
+# 풀긴했지만 시간복잡도 개선하자
 import sys
 from collections import deque
 
