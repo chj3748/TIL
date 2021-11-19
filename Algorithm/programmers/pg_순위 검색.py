@@ -14,15 +14,11 @@ def solution(info, query):
     for applicant in info:
         lang, position, year, food, point = applicant.split(' ')
         point = int(point)
-        for a in range(2):
-            for b in range(2):
-                for c in range(2):
-                    for d in range(2):
-                        tlang = '-' if a else lang
-                        tposition = '-' if b else position
-                        tyear = '-' if c else year
-                        tfood = '-' if d else food
-                        infos[tlang, tposition, tyear, tfood].append(point)
+        for a in [lang, '-']:
+            for b in [position, '-']:
+                for c in [year, '-']:
+                    for d in [food, '-']:
+                        infos[a, b, c, d].append(point)
 
     for k in infos.keys():
         infos[k].sort()
