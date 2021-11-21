@@ -1,4 +1,4 @@
-# hash | programmers 전화번호 목록
+# hash string | programmers 전화번호 목록
 # github.com/chj3748
 import sys
 
@@ -8,12 +8,8 @@ def input():
 
 
 def solution(phone_book):
-    from collections import defaultdict
-    phone_header = defaultdict(int)
-    for phone in phone_book:
-        for i in range(1, len(phone)):
-            phone_header[phone[:i]] += 1
-    for phone in phone_book:
-        if phone_header[phone] > 0:
+    phone_book.sort()
+    for i in range(len(phone_book) - 1):
+        if phone_book[i + 1].startswith(phone_book[i]):
             return False
     return True
