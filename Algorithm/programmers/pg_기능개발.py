@@ -1,4 +1,4 @@
-# stack que | programmers 기능개발
+# math | programmers 기능개발
 # github.com/chj3748
 import sys
 
@@ -9,22 +9,15 @@ def input():
 
 def solution(progresses, speeds):
     answer = []
-    from collections import deque
-    dq_p = deque(progresses)
-    dq_s = deque(speeds)
-    while dq_p:
-        cnt = 0
-        for idx, speed in enumerate(dq_s):
-            if dq_p[idx] == -1:
-                continue
-            dq_p[idx] += speed
-        while dq_p:
-            if dq_p[0] >= 100:
-                dq_p.popleft()
-                dq_s.popleft()
-                cnt += 1
-            else:
-                break
-        if cnt > 0:
-            answer.append(cnt)
+    days = 0
+    n = len(progresses)
+    for i in range(n):
+        remained = 100 - progresses[i] - speeds[i] * days
+        if remained > 0:
+            more_d = remained // speeds[i]
+            ceil_d = 1 if remained % speeds[i] else 0
+            days += more_d + ceil_d
+            answer.append(1)
+        else:
+            answer[-1] += 1
     return answer
