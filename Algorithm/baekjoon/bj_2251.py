@@ -1,5 +1,7 @@
 # graph bfs | baekjoon 2251 물병
 # github.com/chj3748
+# 세 물병의 합은 항상 일정하다는 것을 이용하면 a와 b의 값만 정해지면 c값은 자동으로 결정된다.
+# 위의 내용으로 새로운 풀이 가능
 import sys
 from collections import defaultdict, deque
 
